@@ -23,21 +23,20 @@ class Calculator:
     def odejmowanie(self):
         return self.a - self.b
 
+if __name__ == "__main__":
+    calc1 = Calculator(6,6)
+    print(calc1.dodawanie())
+    print(calc1.odejmowanie())
+    print(calc1.mnozenie())
+    print(calc1.dzielenie())
+    print(Calculator.total_calculators)
 
-calc1 = Calculator(6,6)
-
-print(calc1.dodawanie())
-print(calc1.odejmowanie())
-print(calc1.mnozenie())
-print(calc1.dzielenie())
-print(Calculator.total_calculators)
-
-calc2 = Calculator(12,6)
-print(calc2.dodawanie())
-print(calc2.odejmowanie())
-print(calc2.mnozenie())
-print(calc2.dzielenie())
-print(Calculator.total_calculators)
+    calc2 = Calculator(12,6)
+    print(calc2.dodawanie())
+    print(calc2.odejmowanie())
+    print(calc2.mnozenie())
+    print(calc2.dzielenie())
+    print(Calculator.total_calculators)
 
 # upgrade - 1 - dodaj liczenie ile operacji juz bylo
 #     - w danym kalkulatorze
